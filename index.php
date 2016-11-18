@@ -183,7 +183,7 @@ $token = $textmessage ;
 		$source = str_replace("[*BOTTOKEN*]",$token,$source);
 		$source = str_replace("66443035",$from_id,$source);
 		save("bots/$un/index.php",$source);	
-		file_get_contents("https://api.telegram.org/bot".$token."/setwebhook?url=https://zirgozaronline.ir/tg/PvSazBot/bots/$un/index.php");
+		file_get_contents("https://api.telegram.org/bot".$token."/setwebhook?url=https://php-sh9.rhcloud.com/Ps/bots/$un/index.php");
 		SendMessage($chat_id,"🚀 ربات شما با موفقیت نصب شده است 
 
 [برای ورود به ربات خود کلیک کنید 😃](https://telegram.me/$un)");
